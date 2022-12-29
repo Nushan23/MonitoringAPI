@@ -1,4 +1,4 @@
-package com.satellite_api_master.satellite_monitoring.controller;
+package com.voter_api_master.voter_monitoring.controller;
 
 import java.util.Arrays;
 
@@ -19,8 +19,8 @@ public class MonitoringController {
     @Autowired
     RestTemplate restTemplate;
 
-    @RequestMapping(value = "monitorSatellite/{id}/{url}/{url2}")
-    public String monitorSatellite(@PathVariable("id") Long id, @PathVariable("url") String url, @PathVariable("url2") String url2) {
+    @RequestMapping(value = "monitorVoter/{id}/{url}/{url2}")
+    public String monitorVoter(@PathVariable("id") Long id, @PathVariable("url") String url, @PathVariable("url2") String url2) {
         String catalog_data = "";
         String location_data = "";
         HttpHeaders headers = new HttpHeaders();

@@ -1,5 +1,5 @@
 
-package com.satellite_api_master.satellite_monitoring;
+package com.voter_api_master.voter_monitoring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +9,10 @@ import org.springframework.web.client.RestTemplate;
 
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
-public class SatelliteMonitoring {
+public class VoterMonitoring {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SatelliteMonitoring.class, args);
+		SpringApplication.run(VoterMonitoring.class, args);
 	}
 	@Bean
 	public RestTemplate restTemplate() {
